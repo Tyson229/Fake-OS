@@ -10,6 +10,7 @@
 
     &__app{
         @include mixins.appLayout;
+        width: 2%;
 
         &:active {
             border: 1px solid black;

@@ -17,6 +17,7 @@
   align-items: center;
   margin-bottom: 15px;
   padding: 5px;
+  width: 2%;
 }
 .screen__app:active {
   border: 1px solid black;
