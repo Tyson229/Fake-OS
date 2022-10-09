@@ -1,0 +1,42 @@
+@use "../modules/mixins";
+@use "../modules/variables";
+
+.taskbar {
+    @include mixins.taskbarLayout;
+
+    background-color: grey;
+    border: 1px solid white;
+
+    height: 4%;
+    width: 99.5%;
+
+    position: fixed;
+    bottom: 0;
+
+    &__start {
+        height: 80%;
+        //width: 80px;
+        background-color: grey;
+        border-top: variables.$border-white;
+        border-left: variables.$border-white;
+        border-bottom: variables.$border-black;
+        border-right: variables.$border-black;
+
+        &:active {
+            border-top: variables.$border-black;
+            border-left: variables.$border-black;
+            border-bottom: variables.$border-white;
+            border-right: variables.$border-white;
+        }
+    }
+
+    &__time {
+        height: 80%;
+        background-color: grey;
+        border-top: variables.$border-white;
+        border-left: variables.$border-white;
+        border-bottom: variables.$border-black;
+        border-right: variables.$border-black;
+
+    }
+}

@@ -1,0 +1,27 @@
+@use "../modules/mixins";
+
+.screen {
+    @include mixins.backgroundImage;
+    @include mixins.screenLayout;
+    
+    height: 100%;
+    width: 99.5%;
+    padding: 10px;
+
+    &__app{
+        @include mixins.appLayout;
+
+        &:active {
+            border: 1px solid black;
+        }
+
+        &__icon {
+            margin-bottom: 5px;
+        }    
+        &__title {
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
