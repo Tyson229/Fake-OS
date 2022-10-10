@@ -5,7 +5,15 @@ const screen = document.getElementById("screen");
 
 //Get the time
 const today = new Date();
-taskbarTime.innerText = today.getHours() + ":" + today.getMinutes(); 
+let hours = today.getHours();
+let minutes = today.getMinutes();
+const ampm = hours >= 12 ? 'PM' : 'AM';
+
+hours %= 12;
+hours = hours || 12;
+minutes = minutes < 10 ? `0${minutes}`: minutes;
+
+taskbarTime.innerText = `${hours}:${minutes} ${ampm}`; 
 
 
 //Toggle the menu
