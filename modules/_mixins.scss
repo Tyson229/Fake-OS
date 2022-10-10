@@ -1,3 +1,5 @@
+@use "../modules/variables";
+
 @mixin backgroundImage {
     background-image: url("https://images7.alphacoders.com/116/1161622.png");
     background-position: center;
@@ -43,3 +45,11 @@
     margin-bottom: 15px;
     padding: 5px;
 }
+
+@mixin standardBorder {
+    border-top: variables.$border-white;
+    border-left: variables.$border-white;
+    border-bottom: variables.$border-black;
+    border-right: variables.$border-black;
+}
+

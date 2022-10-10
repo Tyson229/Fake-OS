@@ -123,6 +123,38 @@
   visibility: hidden;
 }
 
+.app {
+  background-color: rgb(208, 208, 208);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  position: absolute;
+  width: 30vw;
+  height: 55vh;
+}
+.app__topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 5%;
+}
+.app__container {
+  background-color: rgb(187, 185, 185);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  height: 85%;
+  padding: 5px;
+  margin: 5px;
+}
+.app__container__content {
+  background-color: white;
+  height: 100%;
+}
+
 body {
   margin: 0px;
   padding: 0px;
