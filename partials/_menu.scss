@@ -1,0 +1,54 @@
+@use "../modules/mixins";
+@use "../modules/variables";
+
+.menu {
+    @include mixins.menuLayout();
+    border-top: variables.$border-white;
+    border-left: variables.$border-white;
+    border-right: variables.$border-grey;
+    border-bottom: variables.$border-grey;
+    &__title {
+        height: 100%;
+        width: 10%;
+        transform: rotate(-90deg);
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    
+    &__gallery {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 90%;
+        background-color: rgb(208, 208, 208);
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+
+            &__icon {
+                padding: 0px 10px;
+
+                &-1 {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            &__title {
+                padding: 0px 5px;
+            }
+    
+            &:hover {
+                background-color: rgb(169, 169, 169);
+            }
+        } 
+    }
+    
+}
+
+.hidden {
+    visibility: hidden;
+}

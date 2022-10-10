@@ -6,9 +6,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%;
-  width: 99.5%;
-  padding: 10px;
+  height: 100vh;
+  width: 100vw;
 }
 .screen__app {
   width: 3%;
@@ -17,10 +16,11 @@
   align-items: center;
   margin-bottom: 15px;
   padding: 5px;
-  width: 2%;
+  width: 3%;
+  margin: 5px;
 }
 .screen__app:active {
-  border: 1px solid black;
+  background-color: rgb(0, 98, 128);
 }
 .screen__app__icon {
   margin-bottom: 5px;
@@ -35,17 +35,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  background-color: grey;
+  background-color: rgb(208, 208, 208);
   border: 1px solid white;
-  height: 4%;
-  width: 99.5%;
+  height: 5vh;
+  width: 100vw;
   position: fixed;
   bottom: 0;
 }
 .taskbar__start {
   height: 80%;
-  background-color: grey;
+  margin: 5px;
+  background-color: rgb(208, 208, 208);
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-bottom: 2px solid black;
@@ -58,12 +58,69 @@
   border-right: 2px solid white;
 }
 .taskbar__time {
-  height: 80%;
-  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 70%;
+  width: 3%;
+  background-color: rgb(208, 208, 208);
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(blue, #0099ff);
+  width: 13%;
+  position: absolute;
+  left: 0;
+  bottom: 39px;
+  margin: 5px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+.menu__title {
+  height: 100%;
+  width: 10%;
+  transform: rotate(-90deg);
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.menu__gallery {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 90%;
+  background-color: rgb(208, 208, 208);
+}
+.menu__gallery__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.menu__gallery__item__icon {
+  padding: 0px 10px;
+}
+.menu__gallery__item__icon-1 {
+  width: 100px;
+  height: 100px;
+}
+.menu__gallery__item__title {
+  padding: 0px 5px;
+}
+.menu__gallery__item:hover {
+  background-color: rgb(169, 169, 169);
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 body {
@@ -71,11 +128,6 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-family: sans-serif;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,11 +5,28 @@
     background-size: cover;
 }
 
+
+
 @mixin taskbarLayout{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+}
+
+@mixin menuLayout {
+    display: flex;
+    align-items: flex-end;
+
+    background-image: linear-gradient(blue, #0099ff);
+
+    width: 13%;
+    
+    position: absolute;
+    left: 0;
+    bottom: 39px;
+    
+    margin: 5px;
+
 }
 
 @mixin screenLayout {

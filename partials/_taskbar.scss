@@ -4,19 +4,21 @@
 .taskbar {
     @include mixins.taskbarLayout;
 
-    background-color: grey;
+    background-color: rgb(208, 208, 208);
     border: 1px solid white;
 
-    height: 4%;
-    width: 99.5%;
+    height: 5vh;
+    width: 100vw;
 
     position: fixed;
     bottom: 0;
 
     &__start {
         height: 80%;
-        //width: 80px;
-        background-color: grey;
+
+        margin: 5px;
+
+        background-color: rgb(208, 208, 208);
         border-top: variables.$border-white;
         border-left: variables.$border-white;
         border-bottom: variables.$border-black;
@@ -31,8 +33,14 @@
     }
 
     &__time {
-        height: 80%;
-        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+        height: 70%;
+        width: 3%;
+        background-color: rgb(208, 208, 208);
         border-top: variables.$border-white;
         border-left: variables.$border-white;
         border-bottom: variables.$border-black;

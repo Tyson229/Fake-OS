@@ -1,23 +1,20 @@
 @use "./modules/mixins";
 @use "./partials/screen";
 @use "./partials/taskbar";
+@use "./partials/menu";
 
 body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     font-family: sans-serif;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
 
 
