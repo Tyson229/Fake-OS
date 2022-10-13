@@ -6,12 +6,15 @@ const screen = document.getElementById("screen");
 //These are the app variables
 const bin = document.getElementById("bin");
 const closeBin_btn = document.querySelector(".app__bin__close-btn");
+const app_bin = document.getElementById("app__bin");
 
 const mc = document.getElementById("mc");
 const closeMC_btn = document.querySelector(".app__mc__close-btn");
+const app_mc = document.getElementById("app__mc");
 
 const note = document.getElementById("note");
 const closeNote_btn = document.querySelector(".app__note__close-btn");
+const app_note = document.getElementById("app__note");
 
 //Get the time
 /**
@@ -48,35 +51,20 @@ const closeMenu = () => {
 screen.addEventListener('click',closeMenu);
 
 
-//Toggle the bin app
-const openBin = () => {
-    document.getElementById("app__bin").classList.remove("hidden");
+//Toggle the app
+const openApp = (app) => {
+    app.classList.remove("hidden");
 };
-const closeBin = () => {
-    document.getElementById("app__bin").classList.add("hidden");
-};
-
-bin.addEventListener('click',openBin);
-closeBin_btn.addEventListener('click', closeBin);
-
-//Toggle the My Computer app
-const openMC = () => {
-    document.getElementById("app__mc").classList.remove("hidden");
-};
-const closeMC = () => {
-    document.getElementById("app__mc").classList.add("hidden");
+const closeApp = (app) => {
+    app.classList.add("hidden");
 };
 
-mc.addEventListener('click',openMC);
-closeMC_btn.addEventListener('click', closeMC);
+bin.addEventListener('click',() => openApp(app_bin));
+closeBin_btn.addEventListener('click', () => closeApp(app_bin));
 
-//Toggle the bin app
-const openNote = () => {
-    document.getElementById("app__note").classList.remove("hidden");
-};
-const closeNote = () => {
-    document.getElementById("app__note").classList.add("hidden");
-};
+mc.addEventListener('click',() => openApp(app_mc));
+closeMC_btn.addEventListener('click', () => closeApp(app_mc));
 
-note.addEventListener('click',openNote);
-closeNote_btn.addEventListener('click', closeNote);
+note.addEventListener('click',() => openApp(app_note));
+closeNote_btn.addEventListener('click', () => closeApp(app_note));
+
