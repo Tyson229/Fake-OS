@@ -10,15 +10,15 @@
 <body>
     <!-- This is the screen-->
     <div class="screen" id="screen">
-        <div class="screen__app">
+        <div class="screen__app" id="bin">
             <img class="screen__app__icon" src="https://win98icons.alexmeub.com/images/recycle_bin_empty-2.png">
             <div class="screen__app__title">Recycle Bin</div>
         </div> 
-        <div class="screen__app">
+        <div class="screen__app" id="mc">
             <img class="screen__app__icon" src="https://win98icons.alexmeub.com/images/computer_explorer-2.png">
             <div class="screen__app__title">My Computer</div>
         </div> 
-        <div class="screen__app">
+        <div class="screen__app" id="note">
             <img class="screen__app__icon" src="https://win98icons.alexmeub.com/icons/png/notepad-1.png">
             <div class="screen__app__title">Note.txt</div>
         </div>
@@ -68,17 +68,45 @@
     </div> 
 
     <!--This is a template for app-->    
-    <div class="app">
+    <div class="hidden test app" id="app__bin">
         <div class="app__topBar">
-            <p class="app__topBar__title">Name</p>
+            <p class="app__topBar__title">Recycle Bin</p>
             <div>
                 <button>_</button>
                 <button>o</button>
-                <button>X</button>
+                <button class="app__bin__close-btn">X</button>
             </div>
         </div>
         <div class="app__container">
-            <div class="app__container__content"></div>
+            <div class="app__container__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quaerat, eligendi, provident delectus corrupti cum architecto obcaecati quisquam necessitatibus odio illum omnis dolor repellendus accusamus dolorem! Quae voluptatem ea vero.</div>
+        </div>
+    </div>
+
+    <div class="test app hidden" id="app__mc">
+        <div class="app__topBar">
+            <p class="app__topBar__title">My computer</p>
+            <div>
+                <button>_</button>
+                <button>o</button>
+                <button class="app__mc__close-btn">X</button>
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="app__container__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quaerat, eligendi, provident delectus corrupti cum architecto obcaecati quisquam necessitatibus odio illum omnis dolor repellendus accusamus dolorem! Quae voluptatem ea vero.</div>
+        </div>
+    </div>
+
+    <div class="test app hidden" id="app__note">
+        <div class="app__topBar">
+            <p class="app__note__title">Note</p>
+            <div>
+                <button>_</button>
+                <button>o</button>
+                <button class="app__note__close-btn">X</button>
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="app__container__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quaerat, eligendi, provident delectus corrupti cum architecto obcaecati quisquam necessitatibus odio illum omnis dolor repellendus accusamus dolorem! Quae voluptatem ea vero.</div>
         </div>
     </div>
     

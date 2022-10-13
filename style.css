@@ -63,7 +63,6 @@
   align-items: center;
   margin: 5px;
   height: 70%;
-  width: 3%;
   background-color: rgb(208, 208, 208);
   border-top: 2px solid white;
   border-left: 2px solid white;
@@ -75,7 +74,6 @@
   display: flex;
   align-items: flex-end;
   background-image: linear-gradient(blue, #0099ff);
-  width: 13%;
   position: absolute;
   left: 0;
   bottom: 39px;
@@ -89,7 +87,7 @@
   height: 100%;
   width: 10%;
   transform: rotate(-90deg);
-  padding: 10px;
+  margin: 10px;
   color: white;
   font-weight: bold;
 }
@@ -117,10 +115,6 @@
 }
 .menu__gallery__item:hover {
   background-color: rgb(169, 169, 169);
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .app {
@@ -155,6 +149,15 @@
   height: 100%;
 }
 
+#app__bin {
+  left: 100px;
+  top: 50px;
+}
+#app__note {
+  right: 100px;
+  bottom: 50px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -164,4 +167,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
 }

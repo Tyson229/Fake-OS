@@ -7,6 +7,8 @@
 
     position: absolute;
 
+    //left: 50px;
+
     width: 30vw;
     height: 55vh;
     &__topBar{
@@ -22,10 +24,22 @@
         height: 85%;
         padding: 5px;
         margin: 5px;
+
         &__content{
             background-color: white;
             height: 100%;
             
         }
+    }
+}
+
+#app {
+    &__bin {
+        left: 100px;
+        top: 50px;
+    }
+    &__note{
+        right: 100px;
+        bottom: 50px;
     }
 }
