@@ -16,6 +16,8 @@ const note = document.getElementById("note");
 const closeNote_btn = document.querySelector(".app__note__close-btn");
 const app_note = document.getElementById("app__note");
 
+import * as drag from "./modules/drag.js";
+
 //Get the time
 /**
  * Get the current time for the clock
@@ -68,3 +70,6 @@ closeMC_btn.addEventListener('click', () => closeApp(app_mc));
 note.addEventListener('click',() => openApp(app_note));
 closeNote_btn.addEventListener('click', () => closeApp(app_note));
 
+drag.dragElement(document.getElementById("app__bin"));
+drag.dragElement(document.getElementById("app__mc"));
+drag.dragElement(document.getElementById("app__note"));
