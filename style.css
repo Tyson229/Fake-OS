@@ -168,12 +168,16 @@
 }
 .insideMC__list {
   flex-direction: column;
-  background-color: grey;
+  width: 30%;
+}
+.insideMC__list__app {
+  border: 1px solid black;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .insideMC__app {
   flex-grow: wrap;
-  width: 80%;
-  background-color: red;
+  width: 60%;
 }
 
 #app__bin {
@@ -187,7 +191,7 @@
   height: 60vh;
 }
 #app__note {
-  width: 10vw;
+  width: 20vw;
   height: 40vh;
 }
 

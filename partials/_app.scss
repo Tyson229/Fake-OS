@@ -63,21 +63,24 @@
 
 .insideMC {
     display: flex;
-
     align-items: flex-start;
     &__list {
         @extend %flexbox;
         flex-direction: column;
-        background-color: grey;
+        
+        width: 30%;
         &__app {
             @extend %flexbox;
+            border: 1px solid black;
+            width: 100%;
+            flex-wrap: wrap;
         }
     }
     &__app {
         @extend %flexbox;
         flex-grow: wrap;
-        width: 80%;
-        background-color: red;
+        width: 60%;
+        //background-color: red;
     }
 
 
@@ -97,7 +100,7 @@
     }
 
     &__note {
-        width: 10vw;
+        width: 20vw;
         height: 40vh;
     }
 }
